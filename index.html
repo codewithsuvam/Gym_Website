@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Suvam Shaw Fitness</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<script>
+function toggleNavbar(collapseID) {
+  document.getElementById(collapseID).classList.toggle("hidden");
+}
+</script>
+</head>
+
+<body class="text-gray-800 antialiased">
+
+<!-- Navbar -->
+<nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
+  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="w-full relative flex justify-between lg:w-auto">
+      <a class="text-lg font-bold uppercase text-white" href="#">
+        Suvam Shaw Fitness
+      </a>
+      <button
+        class="text-white lg:hidden"
+        onclick="toggleNavbar('nav-collapse')"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="lg:flex hidden items-center" id="nav-collapse">
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <li class="px-3 py-2 text-white">📞 +91 8910761104</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="relative pt-16 pb-32 flex items-center justify-center min-h-screen">
+  <div
+    class="absolute top-0 w-full h-full bg-cover"
+    style="background-image:url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5');"
+
+  >
+    <span class="absolute w-full h-full bg-black opacity-75"></span>
+  </div>
+  <div class="relative text-center text-white px-4">
+    <h1 class="text-5xl font-semibold">
+      Feel The <span class="text-orange-500">Power</span>
+    </h1>
+    <p class="mt-4 text-lg text-gray-300">
+      Welcome to Suvam Shaw Fitness – strength, cardio & transformation
+    </p>
+  </div>
+</div>
+
+<!-- About -->
+<section class="py-20 bg-black text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold uppercase mb-6">About Our Gym</h2>
+    <p class="text-lg max-w-3xl mx-auto">
+      We focus on safe bodybuilding, strength training, cardio fitness and
+      disciplined lifestyle with professional guidance.
+    </p>
+  </div>
+</section>
+
+<!-- Machines -->
+<section class="py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-semibold text-center mb-10 uppercase">
+      Workout Machines
+    </h2>
+    <ul class="max-w-xl mx-auto list-disc text-lg">
+      <li>Leg Press & Leg Extension</li>
+      <li>Chest Press & Chest Fly</li>
+      <li>Back Lat Pulldown & Row</li>
+      <li>Shoulder Press</li>
+      <li>Biceps & Triceps Machines</li>
+      <li>2 Cable Machines (Fly, Triceps, Cross)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Cardio -->
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-semibold uppercase mb-8">
+      Cardio Machines
+    </h2>
+    <p class="text-lg">
+      Treadmill • Cross Trainer • Exercise Cycle • Warm-up Area
+    </p>
+  </div>
+</section>
+
+<!-- Trainers (TEXT ONLY) -->
+<section class="py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-semibold uppercase mb-12">
+      Our Trainers
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 border rounded shadow">
+        <h3 class="text-xl font-bold">Sandeep</h3>
+        <p class="text-gray-600 mt-2">Full Body Trainer</p>
+      </div>
+
+      <div class="p-6 border rounded shadow">
+        <h3 class="text-xl font-bold">Anup Shaw</h3>
+        <p class="text-gray-600 mt-2">Cardio Trainer</p>
+      </div>
+
+      <div class="p-6 border rounded shadow">
+        <h3 class="text-xl font-bold">Amit</h3>
+        <p class="text-gray-600 mt-2">Heavy Weight Lifter</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diet -->
+<section class="py-20 bg-black text-white text-center">
+  <h2 class="text-4xl font-semibold uppercase mb-6">
+    Diet Plans
+  </h2>
+  <p class="text-lg">
+    Weight Loss • Muscle Gain • Veg & Non-Veg Plans
+  </p>
+</section>
+
+<!-- Timing -->
+<section class="py-20 text-center">
+  <h2 class="text-4xl font-semibold uppercase mb-4">
+    Gym Timings
+  </h2>
+  <p class="text-lg">
+    Morning: 6:00 AM – 11:00 AM <br />
+    Evening: 5:00 PM – 10:00 PM
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 bg-gray-300 text-center">
+  <p class="text-sm text-gray-700">
+    © 2025 Suvam Shaw Fitness
+  </p>
+</footer>
+
+</body>
+</html>
+
